@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Story Room</title>
+  <link rel="icon" href="assests/logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg border border-1">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-journal-text"></i>  The Story Room</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-4"><a href="signup.html" id="login-btn" class="btn text-light">Login <i class="bi bi-person"></i></a></li></a>
+            <button id="logout-btn" onclick="logout()" class="btn btn-outline d-none mx-4" >Logout <i class="bi bi-person"></i></a></li></button>
+            
+          <li class="nav-item mx-4 cart"><a class="nav-link" href="cart.html" class="btn btn-outline">Cart <i class="bi bi-cart4"></i></a></li>
+          <a href="wishlist.html" class="btn text-light mx-4" ><i class="bi bi-heart-fill"></i> Wishlist</a>
+          <li class="nav-item mx-4 cart"><a class="nav-link" href="#contact-us" class="btn btn-outline">Contact us <i class="bi bi-telephone-fill"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid custom-bg d-flex align-items-center hero-section">
+    <div class="container py-5 ">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="mb-3">Books You'll Love, Stories You'll Remember</h2>
+          <p>Shop from a wide range of genres curated with care. From Bestsellers to hidden gems, find the perfect book for every mood.</p>
+         <a href="#book-list"> <button class="btn btn-outline text-light custom-button">Explore more</button> </a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="assests/head.png" alt="Right Image" class="custom-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="menu-section" class="container my-5">
+    <h2 class="text-center my-5">Grab Your Favorite book from our Website!</h2>
+    <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card menu-section" alt="book1">
+                            <img src="/assests/c1.jpg" class="card-img-top">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card menu-section">
+                            <img src="/assests/c2.jpg" class="card-img-top" alt="book 2">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card menu-section">
+                            <img src="/assests/c3.jpg" class="card-img-top" alt="book3 ">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card menu-section">
+                            <img src="/assests/c4.jpg" class="card-img-top" alt="book 4">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card menu-section">
+                            <img src="/assests/c5.jpg" class="card-img-top" alt="book 5">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card menu-section">
+                            <img src="/assests/c6.jpg" class="card-img-top" alt="book 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+  
+  <div class="container my-5">
+    <h2 class="mb-5">Explore Books</h2>
+    <div id="book-list" class="row g-1">
+      <!-- Book cards will be rendered here -->
+    </div>
+  </div>
+  <div class="seemore my-3">
+    <button class="btn text-light">see more <span> <i class="bi bi-arrow-right"></i></span></button>
+  </div>
+
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow hover-effect">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Top rated Tamil books</h2>
+            <div class="row g-1">
+              <div class="col-6 text-center">
+                <img src="assests\alai oosai.jpg" class="img-thumbnail w-50" alt="Product 1">
+                <h5 class="mt-2">Alai Oosai</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="\assests\jayakandhan 2.jpg"class="img-thumbnail w-50" alt="Product 2">
+                <h5 class="mt-2">Jayakandhan Short Stories</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="\assests\koliudhir kalam.webp" class="img-thumbnail w-50" alt="Product 3">
+                <h5 class="mt-2">Kolaiyudhir Kaalam</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="assests\parthipan kanavu.jpg" class="img-thumbnail w-50" alt="Product 4">
+                <h5 class="mt-2">Parthipan Kanavu</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow hover-effect">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Top Rated Authors</h2>
+            <div class="row g-1">
+              <div class="col-6 text-center">
+                <img src="\assests\without merit.jpg" class="img-thumbnail w-50" alt="Product 5">
+                <h5 class="mt-2">Without Merit</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="\assests\reminds of him.jpg" class="img-thumbnail w-50" alt="Product 6">
+                <h5 class="mt-2">Reminds of Him</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="\assests\varity.jpg" class="img-thumbnail w-50" alt="Product 7">
+                <h5 class="mt-2">Varity</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="\assests\ugly love.jpg"class="img-thumbnail w-50" alt="Product 8">
+                <h5 class="mt-2">Ugly Love</h5>
+                <p class="text-muted">Available as ebook</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="customer-section text-center">
+  <div class="container">
+    <h2 class="mb-5">Our Valuable Customers</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4">
+        <div class="testimonial-card p-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 1" class="customer-img">
+          <h5 class="mt-2">Priya Sharma</h5>
+          <p class="text-muted">"Amazing service! We loved how professional and friendly the team was. Definitely recommended!"</p>
+          <div class="start-rating text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonial-card p-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 2" class="customer-img">
+          <h5 class="mt-2">Rahul Verma</h5>
+          <p class="text-muted">"They understood our needs perfectly. The end product exceeded expectations."</p>
+          <div class="start-rating text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="testimonial-card p-4">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Customer 3" class="customer-img">
+          <h5 class="mt-2">Anjali Mehta</h5>
+          <p class="text-muted">"Great experience from start to finish. Responsive, reliable, and result-driven!"</p>
+          <div class="start-rating text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container my-5">
+  <div class="row align-items-center book-benefits">
+
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="assests/bookreader.png" alt="Reading Book" class="book-image">
+    </div>
+
+    <div class="col-md-6">
+      <h3 class="mb-4">Why Reading Books is Good for You</h3>
+      <div class="benefit-point">
+        <h5 class="fw-bold">📚 Enhances Knowledge</h5>
+        <p>Books expand your understanding of the world and improve your vocabulary and language skills.</p>
+      </div>
+      <div class="benefit-point">
+        <h5 class="fw-bold">🧠 Boosts Brain Function</h5>
+        <p>Reading stimulates your brain, improves focus, and enhances memory and concentration.</p>
+      </div>
+      <div class="benefit-point">
+        <h5 class="fw-bold">😌 Reduces Stress</h5>
+        <p>Diving into a good book can help you relax and escape daily stress.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-secondary text-light py-5" id="contact-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <h5> <i class="bi bi-journal-text"></i> The Story Room </h5>
+        <p>Your cozy corner for books. Explore genres, authors, and curated collections made just for you.</p>
+        <p>&copy; 2025 The Story Room. All rights reserved.</p>
+      </div>
+      <div class="col-md-2 mb-3">
+        <h6 class="fw-bold">Shop</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">New Arrivals</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Best Sellers</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Genres</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Shipping Info</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Order Tracking</a></li>
+        </ul>
+      </div>
+
+   
+      <div class="col-md-2 mb-3">
+        <h6 class="fw-bold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-2 mb-3">
+        <h6 class="fw-bold">Follow Us</h6>
+        <a href="#" class="text-light text-decoration-none d-block mb-1"><i class="bi bi-facebook me-1"></i> Facebook</a>
+        <a href="#" class="text-light text-decoration-none d-block mb-1"><i class="bi bi-twitter me-1"></i> Twitter</a>
+        <a href="#" class="text-light text-decoration-none d-block mb-1"><i class="bi bi-instagram me-1"></i> Instagram</a>
+        <a href="#" class="text-light text-decoration-none d-block"><i class="bi bi-youtube me-1"></i> YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assests/book.js"></script>
+  <script src="app.js"></script>
+  <script src="wishlist.js"></script>
+ 
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybR7fA8gA5tFlm2Oh0PpI94ZqBspw6Xb9KlJ7t4gX6X3ZYp47" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

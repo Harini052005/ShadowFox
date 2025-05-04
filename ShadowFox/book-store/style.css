@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+body {
+  background-color: #f5f3e7; 
+  font-family: 'Poppins', sans-serif;
+}
+.hero-section h2{
+  font-size: 50px;
+  font-weight:500;
+}
+.book-benefits {
+  padding: 40px 20px;
+  border-radius: 12px;
+  
+}
+.benefit-point {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.btn {
+  color: white;
+  background-color: #8B4513; 
+  border: none;
+}
+.btn:hover {
+  background-color: #a0522d;
+}
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+   .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .btn-wishlist {
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }
+  
+  .btn-wishlist:hover {
+    background-color: #279015;
+    color: #ffffff;
+  }
+
+  .hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+  }
+
+  .hover-effect:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .seemore{
+    text-align: center;
+  }
+
+  .menu-section{
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    }
+
+.menu-section:hover {
+ transform: scale(1.05);
+}
+.menu-section img {
+ height: 500px;
+ width: 700px;
+ object-fit: cover;
+}
+.custom-bg {
+  background-color: #f4e1d2; 
+  min-height: 100vh;
+}
+.custom-button {
+  margin-top: 20px;
+}
+.custom-img {
+  max-width: 100%;
+  height: auto;
+}
+.customer-section {
+  padding: 60px 0;
+}
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  transform: scale(1);
+  border: 2px solid transparent;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05) translateY(-20px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-color: #ffb273; 
+  background-color: #fff9f5;
+}
+.customer-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.custom-container {
+  width: 1000px;
+  height: 300px;
+  background-color: 	#f3d6f3;
+  border-radius: 50px 10px 50px 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  color: #000000; 
+}
+.trust-para {
+  color: #413030;
+  font-size: 15px;
+}

@@ -1,0 +1,54 @@
+[debug] [2025-04-13T05:06:37.983Z] : 
+[debug] [2025-04-13T05:06:37.984Z] : ----------------------------------------------------------------------
+[debug] [2025-04-13T05:06:37.985Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\Harini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-04-13T05:06:37.985Z] : CLI Version:  1.17.6
+[debug] [2025-04-13T05:06:37.985Z] : Platform:     win32
+[debug] [2025-04-13T05:06:37.985Z] : Node Version: v22.13.1
+[debug] [2025-04-13T05:06:37.985Z] : Time:         Sun Apr 13 2025 10:36:37 GMT+0530 (India Standard Time)
+[debug] [2025-04-13T05:06:37.986Z] : ----------------------------------------------------------------------
+[debug] [2025-04-13T05:06:37.986Z] : 
+[debug] [2025-04-13T05:06:38.794Z] : > authorizing via signed-in user option
+[debug] [2025-04-13T05:06:38.794Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-04-13T05:06:38.806Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/17619000000011001 
+
+[warn] [2025-04-13T05:06:59.909Z] : ‼ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2025-04-13T05:06:59.910Z] : API Error while firing request : connect ETIMEDOUT 103.103.196.93:443
+
+[debug] [2025-04-13T05:06:59.910Z] : >>>> RETRYING
+
+[debug] [2025-04-13T05:07:00.146Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 13 Apr 2025 05:06:55 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=007debe5-6a8a-43d7-80b0-3b96260483d5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=007debe5-6a8a-43d7-80b0-3b96260483d5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-04-13T05:07:00.150Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/17619000000011001/environment 
+
+[debug] [2025-04-13T05:07:00.237Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 13 Apr 2025 05:06:56 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=50731cfa-88ee-4fe1-9feb-266aa10bc86c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=50731cfa-88ee-4fe1-9feb-266aa10bc86c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-04-13T05:07:00.516Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/17619000000011001/webapp 
+
+[debug] [2025-04-13T05:07:03.009Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 13 Apr 2025 05:06:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=8290a4f4-b136-4ba1-a5db-9838a8973828;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8290a4f4-b136-4ba1-a5db-9838a8973828;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-04-13T05:07:03.011Z] : 
+[info] [2025-04-13T05:07:03.012Z] : √ client: deploy successful
+[info] [2025-04-13T05:07:03.012Z] : i client: URL => https://portfolio-60039823984.development.catalystserverless.in/app/index.html
+[info] [2025-04-13T05:07:03.012Z] : 
+[info] [2025-04-13T05:07:03.012Z] : √ Catalyst deploy complete!
+[error] [2025-04-13T05:07:03.016Z] : × API Error: connect ETIMEDOUT 103.103.196.93:443
+[debug] [2025-04-13T05:07:03.016Z] : Error Stack: CatalystError: API Error: connect ETIMEDOUT 103.103.196.93:443
+    at API.<anonymous> (C:\Users\Harini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:214:32)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Harini\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\internal\api.js:28:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[debug] [2025-04-13T05:07:03.016Z] : Original Error: Error: connect ETIMEDOUT 103.103.196.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+[debug] [2025-04-13T05:07:03.016Z] : Error Status: 500
+[info] [2025-04-13T05:07:03.016Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2025-04-13T05:07:03.017Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-04-13T05:07:03.017Z] : TOTAL DURATION OF COMMAND EXEC : 24230
+[debug] [2025-04-13T05:07:03.025Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-04-13T05:07:03.148Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sun, 13 Apr 2025 05:06:58 GMT","content-length":"0","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=e1a82791-ccc5-4c40-b22a-f6ad0fe073d7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e1a82791-ccc5-4c40-b22a-f6ad0fe073d7;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+     
+    <nav>
+      <h1 class="logo">Portfolio</h1>
+      <ul class="nav-links" id="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+  </header>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span><i class="fa-solid fa-bars"></i></span>
+   </div>    
+ 
+ 
+
+  <section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h2>Hi, I'm HARINI</h2>
+            <p>Passionate <span id="typewriter"></span><span class="cursor">|</span></p>
+          </div>
+      <div class="hero-img">
+        <img src="img.jpg" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="aboutme.jpg" alt="About Image" />
+      </div>
+      <div class="about-text">
+        <p>
+          Hello! I'm a passionate and creative Web Developer with a strong foundation in HTML, CSS, and JavaScript. I love building clean, user-friendly interfaces and turning ideas into responsive and interactive websites.
+          <br><br>
+          I'm constantly learning new technologies and improving my skills to stay updated in this fast-evolving tech world. Whether it's frontend design or bringing life to a webpage through animations and logic, I enjoy every part of the process.
+          <br><br>
+          Currently, I'm exploring React and backend development to become a full-stack developer. Let's build something amazing together!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-icons">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <p>HTML</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js-square"></i>
+        <p>JavaScript</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-bootstrap"></i>
+        <p>Bootrap</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 97%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 50%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fa-solid fa-database"></i>
+        <p>MongoDB</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 60%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-git-alt"></i>
+        <p>Git</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-code"></i>
+        <p>Java</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <i class="fa-brands fa-python"></i>
+        <p>Python</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 45%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Netflix Clone Webpage</h3>
+        <p>A front-end clone of Netflix built using HTML, CSS, and JavaScript. It displays movie thumbnails, banners, and supports responsive design with a modern UI.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Harini052005/Hunar_Intern_Challenging_Task" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/posts/harinikannan05_webdevelopment-codinglife-netflixclone-activity-7234169785259868160-h2ax?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEvp3xgBYL6gA84gljMk1VZi--kIfrNgR8g" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <h3>Responsive Landing Page</h3>
+        <p>A clean and fully responsive landing page designed for modern web experiences. Built using HTML and CSS with smooth layout transitions on different screen sizes.</p>
+        <div class="project-buttons">
+          <a href="https://github.com/Harini052005/Oasis-Infobyte" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/posts/harinikannan05_webdevelopment-internship-oasisinfobyte-activity-7222240198250614785-fsRG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEvp3xgBYL6gA84gljMk1VZi--kIfrNgR8g" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <h3>ATM Interface</h3>
+        <p>A console-based ATM simulation developed in Java. Includes features like balance checking, withdrawal, deposit, and user authentication using OOP principles.</p>
+        
+        <div class="project-buttons">
+          <a href="https://github.com/Harini052005/ATM_Interface" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/posts/harinikannan05_java-programming-task1-activity-7208384120328970240-eh2N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEvp3xgBYL6gA84gljMk1VZi--kIfrNgR8g" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <div class="project-card">
+        <h3>Eatique - Restauarant Webpage</h3>
+        <p>A responsive and visually appealing restaurant website built using Bootstrap. Showcases menu items, contact info, and smooth navigation for user-friendly browsing.</p>
+
+        <div class="project-buttons">
+          <a href="https://github.com/Harini052005/Cognifyz_Technologies_Intern" target="_blank" class="btn github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/posts/harinikannan05_webdevelopment-bootstrap-frontend-activity-7301866175355895808-skpk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEvp3xgBYL6gA84gljMk1VZi--kIfrNgR8g" target="_blank" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i></p>
+      <p><strong>Email:</strong> harinikannan065@gmail.com</p>
+      <p><i class="fab fa-linkedin"></i> 
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harinikannan05" target="_blank">linkedin.com/in/harinikannan05</a></p>
+      <p><i class="fab fa-github"></i> 
+      <p><strong>GitHub:</strong> <a href="https://github.com/Harini052005" target="_blank">github.com/Harini052005</a></p>
+     
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>© 2025 Harini K. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

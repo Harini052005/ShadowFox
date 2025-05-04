@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - The Story Room</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-journal-text"></i> The Story Room</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-4">
+            <a href="index.html" class="btn btn-outline-primary">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="wishlist.html" class="btn btn-outline-danger">Wishlist <i class="bi bi-heart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Your Cart</h2>
+    <div class="row" id="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+    <div class="text-end mt-4">
+      <h4>Total: ₹<span id="total-price">0</span></h4>
+      <button class="btn btn-success mt-2">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // 1. Load and sanitize
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  
+    // keep only books with a title, price & image
+    cart = cart.filter(book =>
+      book.title && book.price != null && book.image
+    );
+  
+    // write back the cleaned array
+    localStorage.setItem("cart", JSON.stringify(cart));
+  
+    // now render exactly as before
+    const cartItemsContainer = document.getElementById("cart-items");
+    const totalPriceEl      = document.getElementById("total-price");
+  
+    let total = 0;
+  
+    cart.forEach((book, index) => {
+      const title = book.title;
+      const price = Number(book.price) || 0;
+      const image = book.image;   
+  
+      total += price;
+  
+      cartItemsContainer.innerHTML += `
+        <div class="col-md-6 mb-3">
+          <div class="card shadow h-100">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="assests/${image}" class="img-fluid rounded-start" alt="${title}">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="card-text">Price: ₹${price}</p>
+                  <button class="btn btn-outline-danger btn-sm" onclick="removeFromCart(${index})">
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  
+    totalPriceEl.textContent = total;
+  
+    function removeFromCart(i) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.splice(i, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload();
+    }
+    if (cart.length === 0) {
+  cartItemsContainer.innerHTML = `
+    <div class="text-center">
+      <h5>Your cart is empty.</h5>
+      <a href="index.html" class="btn btn-primary mt-3">Go to Shop</a>
+    </div>
+  `;
+}
+
+  </script>
+  <script src="wishlist.js"></script> 
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
